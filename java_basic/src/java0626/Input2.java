@@ -13,7 +13,7 @@ public class Input2 {
 		// 이름, 부서, 실수령액을 출력하세요
 		// 두 명의 직원에 대해 출력하세요
 		
-		char name =  
+		char name =  l
 
 	}
 
