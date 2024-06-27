@@ -2,7 +2,7 @@ package java0626;
 
 import java.util.Scanner;
 
-public class java0626 {
+public class input {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -14,10 +14,10 @@ public class java0626 {
 		
 		
 		// 매서드 가능여부
-		// float 타입 - nextFloat() double - nextDouble()
-		// byte - nextByte() short - nextShort()
-		// char는 없다.
-		// 문자열 입력 - nextLine(), next()
+		// float 타입 - nextFloat()    double - nextDouble()
+		// byte - nextByte()   short - nextShort()
+		// char 는 없다.  
+		// 문자열 입력 - nextLine() ,  next() 
 		
 		// System.out.printf(" 정수 입력 " );
 //		int a = scan.nextInt();
@@ -63,6 +63,8 @@ public class java0626 {
 		
 		// 프로그램 코드는 기본 순차적으로 진행된다.
 		// if, 함수(매서드), 반목문, goto문
+		
+//		float a = scan.nextFloat();
 		
 		
 		
