@@ -56,7 +56,7 @@ public class Loop {
 		
 		int sum = 0;
 		for (int i = 1; i <= number; i++) {
-            sum = sum + i;                       
+            sum = sum + i;                      
         }
 		
 		System.out.println("รัวี : " + sum);
