@@ -65,26 +65,29 @@ class TestMethod{
 
 
 // 인스턴스 메서드, 인스턴스 변수는 객체(인스턴스)를 통해 사용
-// 클래스 메서드, 클래스변수는 클래스이름으로~~~사용
+// 클래스 메서드, 클래스변수는 클래스이름으로 사용
 // 매개 변수 - 밖에 있는 메소드를 안으로 불러들이기 위하 사용하는 것
 class Calc {
 	
-	 void infoPrint(  ) {
+	//메서드 생성
+	void infoPrint(  ) {
 		String name="김경호";
 		int age=51;
 		System.out.println( name+" "+age );
 	}
 	
+	//메서드 생성
 	void view() { // 변수a,b 의 값 출력하는 메서드
 		int a=10, b=20; 
 		System.out.println( a+" "+ b );
 	}
 	
+	//메서드 생성
 	void easy() {
 		System.out.println("메서드 dog쉽네~");
 	}
 	
-	
+	//메서드 생성
 	void scoreTotal( int k , int e, int m ) {
 		int total = k+ e+ m;
 		System.out.println("총점 : " +total);
@@ -96,7 +99,7 @@ class Calc {
 		System.out.println("합 : "+result);
 	}
 	
-	
+	//메서드 생성
 	void sum() {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("첫번째 정수 : ");

@@ -1,4 +1,4 @@
-package java_0702;
+package java0702;
 
 public class classBasic {
 
