@@ -5,13 +5,15 @@ import java.util.Scanner;
 public class MainStudy {
 
 	public static void main(String[] args) {
+		// 배열을 쓰는 이유
+		// 하나의 이름으로 데이터를 합쳐서 사용하기 위함
 		
 		// 정수 데이터 12개 저장할 수 있는 배열 만들기
 		
-		// 기본 데이터 타입 4개 : 
-		// 정수 - short, long, int
+		// 기본 데이터 타입 4개 
+		// 정수 - int, short, long, byte, char 
 		// 실수 - float, double
-		// 문자 - boolean 
+		// 문자(논리) - boolean 
 		// 참,거짓 - ture false
 		
 		// 기본 배열 제외한 나머지는 모두 new를 붙인다.

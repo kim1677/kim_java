@@ -17,8 +17,8 @@ public class javaMethod5 {
 		// 문제.1
 		// 사각형의 너비와 높이를 설정하고 넓이를 출력하시오
 		// 넓이는 main 메서드에서 툴력되게 하시오
-//		int area = util.reatArea();
-//		System.out.println("넓이 : " + area);
+//		int area = util.rectArea();
+//		System.out.println("넓이 : "+ area);
 		
 		
 		
@@ -43,8 +43,8 @@ public class javaMethod5 {
 		// 100 - 합의 결과를 출력하고
 		// 100을 넘지 않으면 세 정수의 합을 출력하시오
 		// main에서 메서드 출력
-		int main = util.nubmer();
-		System.out.println(main);
+//		int main = util.nubmer();
+//		System.out.println(main);
 		
 
 
@@ -95,11 +95,11 @@ class MethodUtil{
 //	}
 
 
-
+//	int rectArea() {
 //	int widht = 45, heigth=50;
 //	int area = widht * heigth;
 //		return area;
-
+//	}
 
 	int[] twoNum(){
 		int num1 = 20, num2 =50;
