@@ -80,19 +80,18 @@ public class Dao {
 			String sql = "select count(*) as cnt from test1_member";
 			
 			try {
+				int size =0;
 				st = conn.createStatement();
 				rs = st.executeQuery(sql);
-				int size;
 				if(rs.next()) {
 					size = rs.getInt("cnt");	// 데이터베이스 데이터(레코드)가 총 몇개 있냐?
 				}
 				if(size!=0) {
+					int i =0;
 					list = new Member[size];
 					sql = "select * frim test1_member";	// 전체 데이터 조회 쿠리문(sql 정의문)
 					rs = st.executeQuery(sql);	// 조회결과 받기
 					while(rs.next() ) {	// 조회 결과 하나씩 순회
-						int i;
-						int = 0;
 						list[i] = new Member(rs.getInt("member_id"), rs.getString("name"), rs.getInt("kor"),
 								rs.getInt("eng"), rs.getInt("mat"), rs.getInt("total"), rs.getInt("std_avg") );
 						i++;			//배열의 다음 인덱스 표현을 위해 1증가

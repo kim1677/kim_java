@@ -11,6 +11,7 @@ public class MainClass {
 		tv.power();
 		tv.power();
 		tv.channelUp();
+		tv.channel++;
 		
 		Aircon air = new Aircon();
 		air.brand="LG»÷ºæ";

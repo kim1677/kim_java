@@ -6,10 +6,18 @@ public class TV extends House {	// House 는 부모 클래스 TV는 자식 클래스
 	public int vol=5;				// 소리
 	
 	
-	protected TV() { 				// 생성자 메서드
-		super();
+	public int getChannel() {
+		return channel;
 	}
-	
+	public void setChannel(int channel) {
+		this.channel = channel;
+	}
+	public int getVol() {
+		return vol;
+	}
+	public void setVol(int vol) {
+		this.vol = vol;
+	}
 	public TV(){
 		super();					// 부모 클래스 생성자 메서드 호출
 	}
@@ -28,8 +36,9 @@ public class TV extends House {	// House 는 부모 클래스 TV는 자식 클래스
 	}
 	
 	@Override						// @(에너테이션) - 컴퓨터에게 설명하기 위한 주석처리
-	void power() {
-		
+	public void power( ) {
+		super.onOff = !super.onOff;
+		System.out.println( "TV 전원 : "+super.onOff);
 	}
 	
 	

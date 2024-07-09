@@ -3,7 +3,7 @@ package homeProduct;
 public abstract class House {
 	
 	protected boolean onOff;
-	protected String brand;						// 제품 브랜드명
+	protected String brand;							// 제품 브랜드명
 	protected int price;							// 제품 가격명
 	
 	protected House(){
