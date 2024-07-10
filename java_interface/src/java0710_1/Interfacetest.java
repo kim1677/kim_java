@@ -1,7 +1,6 @@
 package java0710_1;
 
 abstract class animal{						// 부모클래스,	추상클래스 
-	public abstract void fly();				// 추상메서드
 	public abstract void sound();			// 추상메서드
 }
 

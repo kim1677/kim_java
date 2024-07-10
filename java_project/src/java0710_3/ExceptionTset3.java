@@ -5,7 +5,7 @@ public class ExceptionTset3 {
 	public static void main(String[] args) {
 		
 		try {
-			if()
+//			if()
 				throw new NullPointerException("aa");		// 강제로 오류를 발생시키게 하는 코드
 			
 		}catch(Exception e){
