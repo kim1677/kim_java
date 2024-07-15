@@ -18,7 +18,6 @@ public class LinkedListStudy1 {
 		System.out.println(list.get(3));
 		list.forEach(µµ -> System.out.println(µµ));
 		
-//		list.
 		
 
 	}
