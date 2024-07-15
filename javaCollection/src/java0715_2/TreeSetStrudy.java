@@ -61,6 +61,8 @@ public class TreeSetStrudy {
 		}
 		
 		
+		
+		// 문제.2
 		// 내 점수를 입력하고 나보다 점수가 높은사람들 출력
 		TreeSet<String> score = new TreeSet<>();
 		score.add("89점 이순신");  score.add("67점 김유신");
