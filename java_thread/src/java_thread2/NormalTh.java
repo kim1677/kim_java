@@ -9,22 +9,20 @@ public class NormalTh extends Thread{
 		super(name);
 		this.name=name;
 	}
-	
 	@Override
 	public void run() {
-		System.out.println("¾²·¹µå¸í : "+name);
+		System.out.println("Â¾Â²Â·Â¹ÂµÃ¥Â¸Ã­ : "+name);
 		DaemonTh th = new DaemonTh();
 		th.setDaemon(true);
-		th.start();
+		th.start();		
 		
 		Scanner sc = new Scanner(System.in);
 		for(int i=1; i<=3; i++) {
-			System.out.println("¾Æ¹«°Å³ª ÀÔ·Â : ");
+			System.out.print("Â¾Ã†Â¹Â«Â°Ã…Â³Âª Ã€Ã”Â·Ã‚ : ");
 			String word = sc.nextLine();
-			System.out.println(word);
+			System.out.println( word );
 		}
 	}
-	
 }
 
 

@@ -1,6 +1,6 @@
 package java_thread2;
 
-public class DanmaonTh extends Thread{
+public class DaemonTh extends Thread{
 	
 	@Override
 	public void run() {
