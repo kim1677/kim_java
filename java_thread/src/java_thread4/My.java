@@ -1,8 +1,8 @@
 package java_thread4;
 
-public class State extends Thread{
+public class My extends Thread{
 	private Thread target;
-	public State(String name, Thread target) {
+	public My(String name, Thread target) {
 		super(name);
 		this.target=target;
 	}
@@ -21,6 +21,7 @@ public class State extends Thread{
 			for(int i=0; i<=200000000; i++);
 			for(int i=0; i<=200000000; i++);
 		}
+		
 	}
 
 }
