@@ -2,6 +2,15 @@ package java_Thread4;
 
 public enum ThState {
 	NEW, RUNNABLE, BLOCKED, WATING, TIMED,_WATING, TERMINATED
+	
+//	int num;
+//	ThState(int num){
+//		this.num=num;
+//	}
+//	int getNum() {
+//		return this.num;
+//	}
+//	
 }
 
 /*
