@@ -1,4 +1,4 @@
-package java_Thread4;
+package java_thread4;
 
 public enum ThState {
 	NEW, RUNNABLE, BLOCKED, WATING, TIMED,_WATING, TERMINATED

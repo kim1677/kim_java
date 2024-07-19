@@ -1,4 +1,4 @@
-package java_Thread4;
+package java_thread4;
 
 public class State extends Thread{
 	private Thread target;
