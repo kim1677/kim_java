@@ -45,9 +45,17 @@
 <!-- jquery CDN-->
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <style>
-	.select{color:red}
+	.select{color:red;}
 </style>
 <script>
-	// 선택 버튼 클릭한 메뉴의 텍스트 색생을 빨강색으로 표시
+	//선택 버튼 클릭한 메뉴의 텍스트 색생을 빨강색으로 표시
 	// 다른 메뉴는 텍스트 색상이 검정색
+	$(".selBt").on("click",function(){
+		
+		$(".selBt").each(function(i){
+			$(this).prev().removeClass("select");
+		});
+		$(this).prev().addClass("select");
+	});
+	
 </script>

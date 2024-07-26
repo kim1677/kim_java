@@ -21,13 +21,7 @@
 		if(cook.getName().equals("price")) price = cook.getValue()+"-"+price;
 		if(cook.getName().equals("rest")) rest = cook.getValue()+"-"+rest;
 	}
-	String[] foodList = food.split("-");
-	String[] priceList = price.split("-");
-	String[] restList = rest.split("-");
 	
-	for(int i=0; i<foodList.length; i++){
-		
-	}
 	
 	
 	Cookie food_cook = new Cookie("food",food);
@@ -47,11 +41,11 @@
 
 
 <%	
-	// 쿠키 : 웹 서버가 생성하여 웹 브라우저로 전송하는 작은 정보 파일
+	// 쿠키 : 웹서버가 생성하여 웹 브라우저로 전송하는 작은 정보 파일
 	
 	// 쿠키의 종류
-	// 세션 쿠키 - 세션처럼 정해진 기간없이 클라이언트가 연결을 끊으면 삭제된다.
-	// 영구 쿠키 - 기간이 정해져 있는 쿠키
+	// 세션 쿠키 - 세션처럼 정해진 기간없이 클라이언트가 연결을 끊으면 삭제된다.	(일반적으로 사용되는 쿠키)
+	// 영구 쿠키 - 기간이 정해져 있는 쿠키	(일반적으로 사용되는 쿠키)
 	// 인증 쿠키 - 사용자 정보를 저장하고 있는 쿠키, 로그인 유지
 	// 추적 쿠키 - 사용자가 브라우저에서의 활동을 기록하는 쿠키
 	// 좀비 쿠키 - 쿠키가 삭제된 후에 다시 생성된다.
