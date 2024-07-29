@@ -45,20 +45,43 @@
 	//데이터베이스 사용
 	DBconnect db = new DBconnect();
 	// db.pt = db.conn.prepareStatement(sql);
-	
+		
 	String sql ="insert into board(title, writer, content) values(?,?,?)";
-	
+		
+		try{	
+			db.pt = db.conn.prepareStatement(sql);
+			db.pt.setString(1, title);
+			db.pt.setString(2, writer);
+			db.pt.setString(3, content);
+			db.pt.executeUpdate();		
+		}catch(SQLException e){
+			e.printStackTrace();
+		}
+		
+	int boardId=0; // 방금 저장 한 게시글 번호를 저장하기위한 변수
+	sql = "select board_id from board order by board_id desc limit 1";
 	try{
+			db.pt = db.conn.prepareStatement(sql);
+			db.rs = db.pt.executeQuery();
+			if( db.rs.next() ){
+				boardId= db.rs.getInt("board_id");
+			}
+		}catch(SQLException e){
+			
+		}
 		
-		db.pt = db.conn.prepareStatement(sql);
-		db.pt.setString(1, title);
-		db.pt.setString(2, writer);
-		db.pt.setString(3, content);
-		db.pt.executeUpdate();
+	sql = "insert into board_img(board_id, img_name, img_path) values(?,?,?)";
 		
-	}catch(SQLException e){
-		e.printStackTrace();
-	}
+	try{
+			db.pt = db.conn.prepareStatement(sql);
+			db.pt.setInt(1, boardId);
+			db.pt.setString(2, imgName);
+			db.pt.setString(3, imgPath);
+			db.pt.executeUpdate();
+			
+		}catch(SQLException e){
+			
+		}
 	
 	response.sendRedirect("/jsp_study1/study/?part=board");
 

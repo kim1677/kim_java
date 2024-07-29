@@ -1,3 +1,6 @@
+<%@page import="study.Board"%>
+<%@page import="study.DBconnect"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
@@ -13,13 +16,34 @@
 					<th class="hit">조회수</th>
 				</tr>
 				<%
-					for(int i=0; i<=0; i++){
+					DBconnect db = new DBconnect();
+					
+					String sql="select * from board order by board_id desc";
+					// order by 정렬기준컬럼명 asc (desc:내림차순, asc:오름차순)
+					
+					ArrayList<Board> list = new ArrayList<>();
+					try{
+						db.pt = db.conn.prepareStatement(sql);
+						db.rs = db.pt.executeQuery();
+						while(db.rs.next()){
+							list.add(
+								new Board(db.rs.getInt("board_id"), db.rs.getString("writer"), db.rs.getString("title"), db.rs.getString("content"), 
+											db.rs.getInt("hit")) );
+						}
+					}catch(Exception e){
+						e.printStackTrace();
+						System.out.println("inquiry 테이블 조회 실패");
+					}
+					
+					for(Board row : list){
 				%>
 				<tr>
-					<td class="num"></td>
-					<td class="title"></td>
-					<td class="writer"></td>
-					<td class="hit"></td>
+					<td class="num"><%=row.getBoard_id() %></td>
+					<td class="title">
+						<a href="?part=view&id=<%=row.getBoard_id()%>"> <%=row.getTitle() %></a>
+						</td>
+					<td class="writer"><%=row.getWriter() %></td>
+					<td class="hit"><%=row.getHit() %></td>
 				</tr>
 				<% } %>
 				

@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <%-- 스타일 적용 하려면 boardWrite.css 만들어서 작성 --%>>
-<form method="post" action="boardSave.jsp" enctype="multipart/form=data">
+<form method="post" action="boardSave.jsp" enctype="multipart/form-data">
 	<div id="wrieBox">
 		<div class="writeInput">
 			<label>제목</label>
@@ -15,7 +15,7 @@
 		</div>
 		<div class="writeInput">
 			<label>내용</label>
-			<input type="content" id="content"></textarea>
+			<textarea type="text" name="content"></textarea>
 		</div>
 		<button>작성</button>
 	</div> 

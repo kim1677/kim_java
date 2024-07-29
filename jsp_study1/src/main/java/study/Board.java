@@ -5,6 +5,7 @@ public class Board {
 	private String Writer;
 	private String title;
 	private String content;
+	private int hit;
 	
 	public Board() { }
 	public Board(int board_id, String writer, String title, String content, int hit) { 
@@ -12,7 +13,7 @@ public class Board {
 		this.Writer=writer;
 		this.title=title;
 		this.content=content;
-		this.board_id=hit;
+		this.hit=hit;
 	}
 	
 	public int getBoard_id() {
@@ -38,6 +39,12 @@ public class Board {
 	}
 	public void setContent(String content) {
 		this.content = content;
+	}
+	public int getHit() {
+		return hit;
+	}
+	public void setHit(int hit) {
+		this.hit = hit;
 	}
 	
 	
