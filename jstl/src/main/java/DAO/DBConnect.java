@@ -1,10 +1,10 @@
 package DAO;
 
-import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class DBConnect {
 	protected Connection conn;
@@ -13,7 +13,7 @@ public class DBConnect {
 	protected ResultSet rs;
 
 	protected DBConnect() {
-		
+		connect();
 	}
 	
 	private void connect() {

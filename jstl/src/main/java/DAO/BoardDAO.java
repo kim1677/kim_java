@@ -1,30 +1,33 @@
-package DTO;
+package DAO;
 
 
-public class MemberDTO {
-	private int memberid;
+public class BoardDAO {
+	private int memberId;
 	private String userId;
 	private String userPassword;
 	private String userEmail;
 	private String userName;
 	
-	public MemberDTO(){}
-	public MemberDTO(String userId, String userPassword, String userEmail, String userName){
+	public BoardDAO() {}
+	public BoardDAO(String userId, String userPassword, 
+			String userEmail, String userName) {
 		this.userId=userId;
 		this.userPassword=userPassword;
 		this.userEmail=userEmail;
 		this.userName=userName;
 	}
-	public MemberDTO(int id, String userId, String userPassword, String userEmail, String userName) {
-		this(userId, userPassword, userEmail, userName);
-		this.memberid=id;
+	public BoardDAO(int id, String userId, String userPassword,
+			String userEmail, String userName) {
+		this(userId,userPassword, userEmail, userName);
+		this.memberId=id;
 	}
 	
-	public int getMemberid() {
-		return memberid;
+
+	public int getMemberId() {
+		return memberId;
 	}
-	public void setMemberid(int memberid) {
-		this.memberid = memberid;
+	public void setMemberId(int memberId) {
+		this.memberId = memberId;
 	}
 	public String getUserId() {
 		return userId;
@@ -51,4 +54,6 @@ public class MemberDTO {
 		this.userName = userName;
 	}
 	
+	
+
 }

@@ -1,30 +1,31 @@
 package DTO;
 
-
-public class MemberDTO {
-	private int memberid;
+public class BoardDTO {
+	private int boardid;
 	private String userId;
 	private String userPassword;
 	private String userEmail;
 	private String userName;
+	private int hit;
 	
-	public MemberDTO(){}
-	public MemberDTO(String userId, String userPassword, String userEmail, String userName){
+
+	public BoardDTO(){}
+	public BoardDTO(String userId, String userPassword, String userEmail, String userName){
 		this.userId=userId;
 		this.userPassword=userPassword;
 		this.userEmail=userEmail;
 		this.userName=userName;
 	}
-	public MemberDTO(int id, String userId, String userPassword, String userEmail, String userName) {
+	public BoardDTO(int id, String userId, String userPassword, String userEmail, String userName) {
 		this(userId, userPassword, userEmail, userName);
-		this.memberid=id;
+		this.boardid=id;
 	}
 	
-	public int getMemberid() {
-		return memberid;
+	public int getBoardid() {
+		return boardid;
 	}
-	public void setMemberid(int memberid) {
-		this.memberid = memberid;
+	public void setBoardid(int memberid) {
+		this.boardid = memberid;
 	}
 	public String getUserId() {
 		return userId;
@@ -50,5 +51,12 @@ public class MemberDTO {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
+	public int getHit() {
+		return hit;
+	}
+	public void setHit(int hit) {
+		this.hit = hit;
+	}
 	
 }
+
