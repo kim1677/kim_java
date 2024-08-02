@@ -26,8 +26,8 @@ public class MemberJoin implements MainActive{
 		try {
 			res.sendRedirect("/");
 		}catch(IOException e){ e.printStackTrace();
-		}
 		
+		}	
 		return null;
 		
 	}

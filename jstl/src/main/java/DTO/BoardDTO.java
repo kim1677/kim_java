@@ -13,7 +13,7 @@ public class BoardDTO {
 		this.title=title;
 		this.content=content;
 	}
-	public BoardDTO(int board_id, String writer, String title, String content, int hit) {
+	public BoardDTO(int board_id, String title, String writer, String content, int hit) {
 		this(writer,title,content);
 		this.board_id=board_id;
 		this.hit=hit;
