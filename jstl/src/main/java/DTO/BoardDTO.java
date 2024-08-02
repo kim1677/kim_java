@@ -1,55 +1,46 @@
 package DTO;
 
 public class BoardDTO {
-	private int boardid;
-	private String userId;
-	private String userPassword;
-	private String userEmail;
-	private String userName;
+	private int board_id;
+	private String writer;
+	private String title;
+	private String content;
 	private int hit;
 	
 
-	public BoardDTO(){}
-	public BoardDTO(String userId, String userPassword, String userEmail, String userName){
-		this.userId=userId;
-		this.userPassword=userPassword;
-		this.userEmail=userEmail;
-		this.userName=userName;
+	public BoardDTO(String writer, String title, String content) {
+		this.writer=writer;
+		this.title=title;
+		this.content=content;
 	}
-	public BoardDTO(int id, String userId, String userPassword, String userEmail, String userName) {
-		this(userId, userPassword, userEmail, userName);
-		this.boardid=id;
+	public BoardDTO(int board_id, String writer, String title, String content, int hit) {
+		this(writer,title,content);
+		this.board_id=board_id;
+		this.hit=hit;
 	}
-	
-	public int getBoardid() {
-		return boardid;
+	public int getBoard_id() {
+		return board_id;
 	}
-	public void setBoardid(int memberid) {
-		this.boardid = memberid;
+	public void setBoardid(int boardid) {
+		this.board_id = boardid;
 	}
-	public String getUserId() {
-		return userId;
+	public String getWriter() {
+		return writer;
 	}
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setWriter(String writer) {
+		this.writer = writer;
 	}
-	public String getUserPassword() {
-		return userPassword;
+	public String getTitle() {
+		return title;
 	}
-	public void setUserPassword(String userPassword) {
-		this.userPassword = userPassword;
+	public void setTitle(String title) {
+		this.title = title;
 	}
-	public String getUserEmail() {
-		return userEmail;
+	public String getContent() {
+		return content;
 	}
-	public void setUserEmail(String userEmail) {
-		this.userEmail = userEmail;
-	}
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setContent(String content) {
+		this.content = content;
 	}
 	public int getHit() {
 		return hit;
@@ -57,6 +48,9 @@ public class BoardDTO {
 	public void setHit(int hit) {
 		this.hit = hit;
 	}
+
+	
+	
 	
 }
 

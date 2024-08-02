@@ -16,7 +16,7 @@ public class BoardWrite implements MainActive {
 			String content = request.getParameter("content");
 			String writer = (String)request.getSession().getAttribute("user");
 			
-			BoardDTO dto = new BoardDTO(writer, title, content, writer);
+			BoardDTO dto = new BoardDTO(writer, title, content);
 			
 			BoardDAO dao = new BoardDAO();
 			dao.save(dto);
